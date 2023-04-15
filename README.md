@@ -24,8 +24,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Shawnmhy/NSCLC-Pipeline">
-    <img src="./Images/logo.png" alt="Logo" width="250" height="180">
+  <a href="https://github.com/Shawnmhy/NSCLC-Pipeline/">
+    <img src="./images/logo.png" alt="Logo" width="250" height="180">
   </a>
 
   <h3 align="center">NSCLC-mIF processing pipeline</h3>

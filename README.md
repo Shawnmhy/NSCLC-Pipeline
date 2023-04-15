@@ -48,24 +48,17 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
-<!-- UPDATE -->
-## Update
-
-**The study has now been published at [Cancer Research](https://aacrjournals.org/cancerres/article/82/23/4359/710697/Quantitative-Spatial-Profiling-of-Immune) and is featured as the journal cover!
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-**This project proposed a computational pipeline to analyze the tumor microenvironment in treatment-naive pancreatic adenocarcinoma patients. The cohort was previously described in our**
-[Cancer Discovery paper](https://aacrjournals.org/cancerdiscovery/article-abstract/11/8/2014/666194/Leukocyte-Heterogeneity-in-Pancreatic-Ductal?redirectedFrom=fulltext)
+**This project proposed a computational pipeline to analyze the tumor microenvironment in patients with non-small cell lung cancer (NSCLC) using archival pathological samples and multiplexed immunofluorescence. 
 
 
 
@@ -76,8 +69,8 @@
 ### Operating systems
 
 The computational pipeline was developed on the following operating system:
-* Dell Precision 5820 computer with Windows 10 Pro for Workstations operating systems version.
-* Processor: Intel(R) Xeon(R) W-2245 CPU @ 3.90GHz 3.91GHz
+* Windows 10 Pro.
+* Processor: 12th Gen Intel(R) Core(TM) i7-12700K   3.61 GHz
 * 32GB RAM
 * 64-bit operating system, x64-based processor.
 
@@ -86,10 +79,9 @@ The computational pipeline was developed on the following operating system:
 ### Software dependencies
 
 The computational pipeline was developed using the following softwares:
-* R version 3.5.3.
+* R version 4.2.0.
 * Rstudio Desktop version 1.4.
-* Python version 3.8
-* Pycharm Python IDE version 2020.3.3.
+* Pycharm Python IDE version 2022.12.0.
 * R packages listed at the beginning of each R script.
 * BioRender
 
@@ -98,7 +90,7 @@ The computational pipeline was developed using the following softwares:
 ## Installation guide
 
 ### Instructions
-To install the pipeline, simply download the codes and run from local R or Python compiler.
+To install the pipeline, simply download the codes and run from local R compiler.
 
 ## Installation time
 * Installation time all dependencies should take no longer than 30 minutes.
@@ -108,10 +100,13 @@ To install the pipeline, simply download the codes and run from local R or Pytho
 ### Usage
 
 The pipeline consists of five components:
-* PDAC_IHCpipeline0.R (Data preprocessing, patient group split, first-order characterization)
-* PDAC_IHCpipeline1.R (mIRS computation)
-* PDAC_IHCpipeline2.R (immune aggregations computation)
-* PDAC_IHCpipeline_validation.R (validation of biomarkers on a neoadjuvant-treated cohort)
+* DataPreparation.R (Read single-cell data for each core and combine as one, compute cell densities by core, read cell boundaries data)
+* NSCLC_Pipeline1.R (First-order characterizations, tSNE plot, population fractions comparison and clustering, survival analysis, patient stratification)
+* NSCLC_Pipeline2.R (Cell density comparison betweeen survival group, Shannon's entropy, ratios, )
+* NSCLC_Pipeline3.R (Network analysis, minimum spanning tree, pairwise Gcross function, voronoi tesselation)
+* NSCLC_Pipeline4.R (RiskScale)
+* NSCLC_Pipeline5.R (PD-1/PD-L1 statistics)
+* NSCLC_Pipeline6.R (Analysis on validation cohort)
 * Function.R (Custom R functions defined for computations)
 
 

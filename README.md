@@ -25,7 +25,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="./images/logo.png" alt="Logo" width="250" height="180">
+    <img src="./Images/logo.png" alt="Logo" width="250" height="180">
   </a>
 
   <h3 align="center">HCC-IMC processing pipeline</h3>
